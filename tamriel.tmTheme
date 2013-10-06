@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 
+TANGO COLOURS:
+Name				Light   Medium  Dark
+Butter				fce94f	edd400	c4a000
+Orange				fcaf3e	f57900	ce5c00
+Chocolate			e9b96e	c17d11	8f5902
+Chameleon			8ae234	73d216	4e9a06
+Sky Blue			729fcf	3465a4	204a87
+Plum				ad7fa8	75507b	5c3566
+Scarlet Red			ef2929	cc0000	a40000
+Aluminium (light)	eeeeec	d3d7cf	babdb6
+Aluminium (dark)	888a85	555753	2e3436	
+
+Note that this is not a tango theme, but it is heavily inspired by gedit's oblivion theme for Python (hence the name) which is a tango theme.
+Notable exceptions from the tango style is the colour of strings, which is a bright and warm yellow, meant to be easy on the eye (at least mine). And the background which is an almost black, but slightly warm tone.
+
+Currently implemented (sane schema):
+	Python
+	Java
+	XML
+	Shell
+	Jinja2
+	CSS
+
+Planned Future Support:
+	HTML
+	Javascript
+	SQL
+ -->
+ <plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Esben Sonne</string>
+	<key>name</key>
+	<string>tamriel</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>invisibles</key>
+				<string>#3B3A32</string>
+				<key>lineHighlight</key>
+				<string>#31221B</string>
+				<key>selection</key>
+				<string>#49483E</string>
+				<key>findHighlight</key>
+				<string>#FFE792</string>
+				<key>findHighlightForeground</key>
+				<string>#000000</string>
+				<key>selectionBorder</key>
+				<string>#222218</string>
+				<key>activeGuide</key>
+				<string>#9D550FB0</string>
+				<key>bracketsForeground</key>
+				<string>#F8F8F2A5</string>
+				<key>bracketsOptions</key>
+				<string>underline</string>
+				<key>bracketContentsForeground</key>
+				<string>#F8F8F2A5</string>
+				<key>bracketContentsOptions</key>
+				<string>underline</string>
+				<key>tagsOptions</key>
+				<string>stippled_underline</string>
+				<key>background</key>
+				<string>#120F0A</string>
+				<key>caret</key>
+				<string>#eeeeec</string>
+				<key>foreground</key>
+				<string>#eeeeec</string>
+				<key>gutterForeground</key>
+				<string>#73797b75</string>
+				<key>guide</key>
+				<string>#73797b30</string>
+			</dict>
+		</dict>
+		<!-- GENERAL -->
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#555753</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constant</string>
+			<key>scope</key>
+			<string>constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#cc0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constant Numeric</string>
+			<key>scope</key>
+			<string>constant.numeric</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFD000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFD000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>storage.type</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>entity.name.type.class</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#eeeeec</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function Name</string>
+			<key>scope</key>
+			<string>entity.name</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Inherited Class</string>
+			<key>scope</key>
+			<string>entity.other.inherited-class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4e9a06</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#eeeec</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#729fcf</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Builtin Functions</string>
+			<key>scope</key>
+			<string>support.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3465a4</string>
+			</dict>
+		</dict>
+		<!-- JAVA -->
+		<dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>source.java storage.modifier.java</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#204a87</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>source.java keyword.other.import</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#5c3566</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>source.java keyword.other.package</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#5c3566</string>
+			</dict>
+		</dict>
+		<!-- PYTHON -->
+		<dict>
+			<key>name</key>
+			<string>Function Name</string>
+			<key>scope</key>
+			<string>source.python entity.name.function.decorator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#888a85</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>source.python storage.type.</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#eeeeec</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>source.python support.variable.magic</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#204a87</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>source.python keyword.control.import</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#5c3566</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keyword</string>
+			<key>scope</key>
+			<string>source.python support.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3465a4</string>
+			</dict>
+		</dict>
+		<!-- JS -->
+		<!-- XML -->
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>meta.tag.xml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3465a4</string>
+			</dict>
+		</dict>
+		<!-- HTML -->
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>meta.tag.sgml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#888a85</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>meta.tag.block.any.html, entity.name.tag.inline.any.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3465a4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>punctuation.definition.tag.end.html, punctuation.definition.tag.begin.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#d3d7cf</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>text.html entity</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#729fcf</string>
+			</dict>
+		</dict>
+		<!-- JINJA2 -->
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>entity.other.jinja.delimiter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#eeeeec</string>
+			</dict>
+		</dict>
+		<!-- CSS -->
+		<dict>
+			<key>name</key>
+			<string></string>
+			<key>scope</key>
+			<string>source.css meta.property-name.css</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#babdb6</string>
+			</dict>
+		</dict><dict>
+			<key>name</key>
+			<string></string>
+			<key>scope</key>
+			<string>source.css entity.other.attribute-name.id.css, entity.other.attribute-name.class.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f57900</string>
+			</dict>
+		</dict>
+		<!-- Shell -->
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>source.shell support.function.builtin.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a40000</string>
+			</dict>
+		</dict>
+		<!-- Textile -->
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>markup.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a40000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>markup.bold</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>13E579BF-40AB-42E2-9EAB-0AD3EDD88532</string>
+	<key>colorSpaceName</key>
+	<string>sRGB</string>
+	<key>semanticClass</key>
+	<string>theme.dark.tamriel</string>
+</dict>
+</plist>
