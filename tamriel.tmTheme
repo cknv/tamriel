@@ -431,6 +431,40 @@ Planned Future Support:
 				<string>bold</string>
 			</dict>
 		</dict>
+		<!-- diff -->
+		<dict>
+			<key>name</key>
+			<string>Diff Addition</string>
+			<key>scope</key>
+			<string>markup.deleted.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a40000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Addition</string>
+			<key>scope</key>
+			<string>markup.inserted.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4e9a06</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff File Header</string>
+			<key>scope</key>
+			<string>meta.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c4a000</string>
+			</dict>
+		</dict>
 		<!-- git gutter -->
 		<dict>
 		  <key>name</key>
