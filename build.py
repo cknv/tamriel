@@ -23,7 +23,7 @@ if __name__ == '__main__':
     style = {
         'author': 'Esben Sonne',
         'name': 'tamriel',
-        'version': '0.1.1',
+        'version': '0.1.2',
         'uuid': '13E579BF-40AB-42E2-9EAB-0AD3EDD88532',
         'colorSpaceName': 'sRGB',
         'semanticClass': 'theme.dark.tamriel',
@@ -60,8 +60,8 @@ if __name__ == '__main__':
             },
             {
                 'name': 'constant numeric',
-                'scope': 'contant.numeric',
-                'foreground': '#ffd000',
+                'scope': 'constant.numeric',
+                'foreground': scarlet_red.light,
             },
             {
                 'name': 'string',
