@@ -154,4 +154,3 @@ if __name__ == '__main__':
     from zipfile import ZipFile
     with ZipFile('tamriel.sublime-package', 'w') as fo:
         fo.writestr('tamriel.tmTheme', output.encode('utf-8'))
-
