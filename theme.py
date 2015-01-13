@@ -46,7 +46,6 @@ def general_settings(style):
     sub2 = Element('dict')
     for key, value in style['settings'].items():
         sub2.append(key_node(key))
-
         sub2.append(string_node(value))
 
     sub.append(sub2)
