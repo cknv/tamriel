@@ -25,8 +25,6 @@ if __name__ == '__main__':
         'name': 'tamriel',
         'version': '0.1.2',
         'uuid': '13E579BF-40AB-42E2-9EAB-0AD3EDD88532',
-        'colorSpaceName': 'sRGB',
-        'semanticClass': 'theme.dark.tamriel',
         'settings': {
             'invisibles': '#3B3A32',
             'lineHighlight': '#31221B',

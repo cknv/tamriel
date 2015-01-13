@@ -64,14 +64,10 @@ def theme(style):
 
     add_node('author', style, settings)
     add_node('name', style, settings)
+    add_node('uuid', style, settings)
 
     settings.append(key_node('settings'))
     settings.append(general_settings(style))
-
-    add_node('uuid', style, settings)
-    add_node('colorSpaceName', style, settings)
-    add_node('semanticClass', style, settings)
-
 
     return tostring(
         root,
