@@ -143,7 +143,7 @@ if __name__ == '__main__':
                 'name': 'gitgutter changed',
                 'scope': 'markup.changed.git_gutter',
                 'foreground': butter.medium,
-            }
+            },
         ],
     }
 
