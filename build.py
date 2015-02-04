@@ -79,7 +79,7 @@ if __name__ == '__main__':
             },
             {
                 'name': 'function',
-                'scope': 'entity.name',
+                'scope': 'entity.name.function',
                 'fontStyle': 'bold',
             },
             {
