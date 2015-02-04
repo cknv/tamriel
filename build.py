@@ -120,8 +120,9 @@ if __name__ == '__main__':
             },
             {
                 'name': 'decorators',
-                'scope': 'support.function.decorator',
+                'scope': 'entity.name.function.decorator',
                 'foreground': aluminium_dark.light,
+                'fontStyle': '',
             },
             {
                 'name': 'xml-tags',
