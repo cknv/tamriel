@@ -23,7 +23,7 @@ if __name__ == '__main__':
     style = {
         'author': 'Esben Sonne',
         'name': 'tamriel',
-        'version': '0.1.2',
+        'version': '0.2.0',
         'uuid': '13E579BF-40AB-42E2-9EAB-0AD3EDD88532',
         'settings': {
             'invisibles': '#3B3A32',
@@ -124,10 +124,27 @@ if __name__ == '__main__':
                 'foreground': aluminium_dark.light,
                 'fontStyle': '',
             },
+            # xml
             {
                 'name': 'xml-tags',
                 'scope': 'entity.name.tag',
                 'foreground': sky_blue.dark,
+            },
+            # markup
+            {
+                'name': 'markup heading',
+                'scope': 'markup.heading',
+                'foreground': scarlet_red.dark
+            },
+            {
+                'name': 'markup bold',
+                'scope': 'markup.bold',
+                'fontStyle': 'bold',
+            },
+            {
+                'name': 'markup italic',
+                'scope': 'markup.italic',
+                'fontStyle': 'italic'
             },
             # gitgutter colors.
             {
@@ -149,6 +166,10 @@ if __name__ == '__main__':
     }
 
     output = theme(style)
+
+    # with open('tamriel.tmTheme', 'w+') as theme_file:
+    #     theme_file.write(output)
+
 
     from zipfile import ZipFile
     with ZipFile('tamriel.sublime-package', 'w') as fo:
