@@ -7,7 +7,7 @@ class Color:
         self.medium = medium
         self.dark = dark
 
-# Tango colors used
+# Tangoish colors used
 butter = Color('#fce94f', '#edd400', '#c4a000')
 orange = Color('#fcaf3e', '#f57900', '#ce5c00')
 chocolate = Color('#e9b96e', '#c17d11', '#8f5902')
