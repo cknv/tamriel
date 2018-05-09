@@ -35,8 +35,8 @@
             "foreground": "var(yellow)",
         },
         {
-            "name": "Number",
-            "scope": "constant.numeric",
+            "name": "Constants (bools and numbers)",
+            "scope": "constant",
             "foreground": "var(light_red)",
         },
         {
