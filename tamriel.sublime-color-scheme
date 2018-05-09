@@ -1,0 +1,142 @@
+{
+    "name": "Tamriel Color Scheme",
+    "variables": {
+        "yellow": "#EDD400",
+        "orange": "#F57900",
+        "light_grey": "#EEEEEC",
+        "med_grey": "#888A85",
+        "dark_grey": "#555753",
+        "light_red": "#EF2929",
+        "dark_red": "#CC0000",
+        "light_blue": "#729FCF",
+        "dark_blue": "#3465A4",
+        "light_purple": "#AD7FA8",
+        "light_green": "#73D216",
+        "dark_green": "#4E9A06",
+    },
+    "globals": {
+        "background": "#120F0A",
+        "line_highlight": "#31221B",
+        "foreground": "var(light_grey)",
+        "caret": "var(light_grey)",
+        "selection": "#49483E",
+        "active_guide": "#9D550FB0"
+    },
+    "rules": [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(dark_grey)",
+            "font_style": "italic",
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(yellow)",
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(light_red)",
+        },
+        {
+            "name": "Constant Name",
+            "scope": "variable.other.constant",
+            "foreground": "var(light_red)",
+        },
+        {
+            "name": "Name",
+            "scope": "storage.type",
+            "font_style": "bold",
+        },
+        {
+            "name": "Class",
+            "scope": "entity.name.class",
+            "font_style": "bold",
+            "foreground": "var(light_grey)",
+        },
+        {
+            "name": "Function",
+            "scope": "entity.name.function",
+            "font_style": "bold",
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "font_style": "bold",
+            "foreground": "var(light_grey)",
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "var(light_blue)",
+        },
+        {
+            "name": "Variable - Parameter",
+            "scope": "variable.parameter",
+            "foreground": "var(light_purple)",
+        },
+        {
+            "name": "Builtin Functions",
+            "scope": "support.function",
+            "foreground": "var(dark_blue)",
+        },
+        {
+            "name": "Builtin Fypes",
+            "scope": "support.type",
+            "foreground": "var(dark_blue)",
+        },
+        {
+            "name": "Magic Methods",
+            "scope": "support.function.magic",
+            "foreground": "var(orange)",
+        },
+        {
+            "name": "Magic Names",
+            "scope": "support.variable.magic",
+            "foreground": "var(dark_blue)",
+        },
+        {
+            "name": "Inherited From",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(dark_green)",
+        },
+        {
+            "name": "Decorators",
+            "scope": "punctuation.definition.annotation",
+            "foreground": "var(med_grey)",
+        },
+        // general markup
+        {
+            "name": "Markup Heading",
+            "scope": "markup.heading",
+            "foreground": "var(dark_red)",
+        },
+        {
+            "name": "Markup Bold",
+            "scope": "markup.bold",
+            "font_style": "bold",
+        },
+        {
+            "name": "Markup Italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        // gitgutter colors
+        {
+            "name": "Gitgutter Deleted",
+            "scope": "markup.deleted.git_gutter",
+            "foreground": "var(dark_red)",
+        },
+        {
+            "name": "Gitgutter Inserted",
+            "scope": "markup.inserted.git_gutter",
+            "foreground": "var(light_green)",
+        },
+        {
+            "name": "Gitgutter Changed",
+            "scope": "markup.changed.git_gutter",
+            "foreground": "var(yellow)",
+        },
+    ]
+}
