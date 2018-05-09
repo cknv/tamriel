@@ -15,7 +15,7 @@
         "dark_green": "#4E9A06",
     },
     "globals": {
-        "accent": "var(light_red)",
+        "accent": "var(orange)",
         "background": "#120F0A",
         "line_highlight": "#31221B",
         "foreground": "var(light_grey)",
