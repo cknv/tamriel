@@ -47,8 +47,13 @@
         },
         {
             "name": "Name",
-            "scope": "storage.type",
+            "scope": "storage",
             "font_style": "bold",
+        },
+        {
+            "name": "Name modifier",
+            "scope": "storage.modifier",
+            "foreground": "var(light_green)",
         },
         {
             "name": "Class",
