@@ -128,6 +128,16 @@
             "scope": "markup.italic",
             "font_style": "italic"
         },
+        {
+            "name": "Markup Link",
+            "scope": "markup.underline.link",
+            "foreground": "var(dark_blue)",
+        },
+        {
+            "name": "Markup Link Description",
+            "scope": "meta.link.inline.description",
+            "foreground": "var(yellow)",
+        },
         // gitgutter colors
         {
             "name": "Gitgutter Deleted",
