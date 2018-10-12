@@ -53,7 +53,7 @@
         {
             "name": "Name modifier",
             "scope": "storage.modifier",
-            "foreground": "var(light_green)",
+            "foreground": "var(dark_green)",
         },
         {
             "name": "Class",
