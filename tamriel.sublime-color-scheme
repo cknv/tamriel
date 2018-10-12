@@ -42,8 +42,8 @@
         },
         {
             "name": "Constant Name",
-            "scope": "variable.other.constant",
-            "foreground": "var(light_red)",
+            "scope": "variable.other.constant|entity.name.constant",
+            "foreground": "var(orange)",
         },
         {
             "name": "Name",
