@@ -21,7 +21,12 @@
         "foreground": "var(light_grey)",
         "caret": "var(light_grey)",
         "selection": "#49483E",
-        "active_guide": "#9D550FB0"
+        "active_guide": "#9D550FB0",
+        "line_diff_width": "4",
+        "line_diff_added": "var(dark_green)",
+        "line_diff_modified": "var(yellow)",
+        "line_diff_deleted": "var(dark_red)",
+
     },
     "rules": [
         {
