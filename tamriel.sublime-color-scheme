@@ -32,7 +32,7 @@
         {
             "name": "Comment",
             "scope": "comment",
-            "foreground": "var(dark_grey)",
+            "foreground": "var(med_grey)",
             "font_style": "italic",
         },
         {
