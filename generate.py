@@ -31,7 +31,7 @@ class Theme:
 
 
 def make_themes():
-    shared_rules = [
+    base_rules = [
         Rule(name="Comment", scope="comment", foreground="var(comment)", font_style=FontStyle.italic),
         Rule(name="String", scope="string", foreground="var(string)"),
         Rule(name="Constant Value", scope="constant", foreground="var(constants)"),
@@ -49,13 +49,17 @@ def make_themes():
         Rule(name="Magic Names", scope="support.variable.magic", foreground="var(builtins)"),
         Rule(name="Inherited From", scope="entity.other.inherited-class", foreground="var(inherhit_from)"),
         Rule(name="Decorators", scope="punctuation.definition.annotation", foreground="var(comment)"),
-        # general markup
+    ]
+
+    markup_rules = [
         Rule(name="Markup Heading", scope="markup.heading", foreground="var(constant)"),
         Rule(name="Markup Bold", scope="markup.bold", font_style=FontStyle.bold),
         Rule(name="Markup Italic", scope="markup.italic", font_style=FontStyle.italic),
         Rule(name="Markup Link", scope="markup.underline.link", foreground="var(variable)"),
         Rule(name="Markup Link Description", scope="meta.link.inline.description", foreground="var(string)"),
     ]
+
+    rules = base_rules + markup_rules
 
     shared_globals = {
         "accent": "var(accent)",
@@ -98,7 +102,7 @@ def make_themes():
             "highlight": "color(var(background) blend(var(foreground) 90%))",
         },
         globals=shared_globals,
-        rules=shared_rules,
+        rules=rules,
     )
 
     light_theme = Theme(
@@ -126,7 +130,7 @@ def make_themes():
             "highlight": "color(var(background) blend(var(foreground) 90%))",
         },
         globals=shared_globals,
-        rules=shared_rules,
+        rules=rules,
     )
 
     themes_by_filename = {
