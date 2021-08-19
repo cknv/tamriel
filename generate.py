@@ -40,7 +40,7 @@ def make_themes():
         Rule(name="Name modifier", scope="storage.modifier", foreground="var(modifier)"),
         Rule(name="Class", scope="entity.name.class", font_style=FontStyle.bold, foreground="var(keyword)"),
         Rule(name="Function", scope="entity.name.function", font_style=FontStyle.bold),
-        Rule(name="Keyword", scope="keyword", font_style=FontStyle.bold),
+        Rule(name="Keyword", scope="keyword", foreground="var(foreground)", font_style=FontStyle.bold),
         Rule(name="Variable", scope="variable", foreground="var(variable)"),
         Rule(name="Variable - Parameter", scope="variable.parameter", foreground="var(parameter)"),
         Rule(name="Builtin Functions", scope="support.function", foreground="var(builtins)"),
