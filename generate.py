@@ -52,7 +52,7 @@ def make_themes():
     ]
 
     markup_rules = [
-        Rule(name="Markup Heading", scope="markup.heading", foreground="var(constant)"),
+        Rule(name="Markup Heading", scope="markup.heading", foreground="var(constants)"),
         Rule(name="Markup Bold", scope="markup.bold", font_style=FontStyle.bold),
         Rule(name="Markup Italic", scope="markup.italic", font_style=FontStyle.italic),
         Rule(name="Markup Link", scope="markup.underline.link", foreground="var(variable)"),
