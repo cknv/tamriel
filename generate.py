@@ -59,7 +59,14 @@ def make_themes():
         Rule(name="Markup Link Description", scope="meta.link.inline.description", foreground="var(string)"),
     ]
 
-    rules = base_rules + markup_rules
+    # GitGutter colors for highlighting in the minimap
+    git_gutter_rules = [
+        Rule(name="GitGutter - Deleted", scope="markup.deleted.git_gutter", foreground="var(git_deleted)"),
+        Rule(name="GitGutter - Changed", scope="markup.changed.git_gutter", foreground="var(git_changed)"),
+        Rule(name="GitGutter - Added", scope="markup.inserted.git_gutter", foreground="var(git_added)"),
+    ]
+
+    rules = base_rules + markup_rules + git_gutter_rules
 
     shared_globals = {
         "accent": "var(accent)",
