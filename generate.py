@@ -2,16 +2,16 @@ import json
 import enum
 import dataclasses
 import colors
+import typing
 
-
-class FontStyle(enum.StrEnum):
-    bold = "bold"
-    italic = "italic"
-    underline = "underline"
-    glow = "glow"
-    stippled_underline = "stippled_underline"
-    squiggly_underline = "squiggly_underline"
-
+type FontStyle = typing.Literal[
+    "bold",
+    "italic",
+    "underline",
+    "glow",
+    "stippled_underline",
+    "squiggly_underline",
+]
 
 @dataclasses.dataclass
 class Rule:
@@ -31,15 +31,15 @@ class Theme:
 
 def make_themes():
     base_rules = [
-        Rule(name="Comment", scope="comment", foreground="var(comment)", font_style=FontStyle.italic),
+        Rule(name="Comment", scope="comment", foreground="var(comment)", font_style="italic"),
         Rule(name="String", scope="string", foreground="var(string)"),
         Rule(name="Constant Value", scope="constant", foreground="var(constants)"),
         Rule(name="Constant Name", scope="variable.other.constant|entity.name.constant", foreground="var(constant_name)"),
-        Rule(name="Name", scope="storage", font_style=FontStyle.bold),
+        Rule(name="Name", scope="storage", font_style="bold"),
         Rule(name="Name modifier", scope="storage.modifier", foreground="var(modifier)"),
-        Rule(name="Class", scope="entity.name.class", font_style=FontStyle.bold, foreground="var(keyword)"),
-        Rule(name="Function", scope="entity.name.function", font_style=FontStyle.bold),
-        Rule(name="Keyword", scope="keyword", foreground="var(foreground)", font_style=FontStyle.bold),
+        Rule(name="Class", scope="entity.name.class", font_style="bold", foreground="var(keyword)"),
+        Rule(name="Function", scope="entity.name.function", font_style="bold"),
+        Rule(name="Keyword", scope="keyword", foreground="var(foreground)", font_style="bold"),
         Rule(name="Variable", scope="variable", foreground="var(variable)"),
         Rule(name="Variable - Parameter", scope="variable.parameter", foreground="var(parameter)"),
         Rule(name="Builtin Functions", scope="support.function", foreground="var(builtins)"),
@@ -52,8 +52,8 @@ def make_themes():
 
     markup_rules = [
         Rule(name="Markup Heading", scope="markup.heading", foreground="var(constants)"),
-        Rule(name="Markup Bold", scope="markup.bold", font_style=FontStyle.bold),
-        Rule(name="Markup Italic", scope="markup.italic", font_style=FontStyle.italic),
+        Rule(name="Markup Bold", scope="markup.bold", font_style="bold"),
+        Rule(name="Markup Italic", scope="markup.italic", font_style="italic"),
         Rule(name="Markup Link", scope="markup.underline.link", foreground="var(variable)"),
         Rule(name="Markup Link Description", scope="meta.link.inline.description", foreground="var(string)"),
     ]
