@@ -1,11 +1,10 @@
 import json
 import enum
 import dataclasses
-from typing import Optional
 import colors
 
 
-class FontStyle(str, enum.Enum):
+class FontStyle(enum.StrEnum):
     bold = "bold"
     italic = "italic"
     underline = "underline"
@@ -18,8 +17,8 @@ class FontStyle(str, enum.Enum):
 class Rule:
     name: str
     scope: str
-    foreground: Optional[str] = None
-    font_style: Optional[FontStyle] = None
+    foreground: str | None = None
+    font_style: FontStyle | None = None
 
 
 @dataclasses.dataclass
